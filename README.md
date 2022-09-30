@@ -1,5 +1,5 @@
 
-# ThunderMc.iR
+# ThunderMc.iR (Incomplete)
 
 *This repository is an ongoing project*
 

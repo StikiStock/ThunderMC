@@ -65,7 +65,8 @@
 
 </head>
 
-<body class="p-0 m-0 w-full h-full bg-[rgb(230,231,238)] overflow-x-hidden font-['Nunito_Sans']">
+<body
+  class="p-0 m-0 w-full h-full bg-gradient-to-b from-[rgb(230,231,238)] via-[rgb(230,231,238)] to-[rgb(166,166,172)] overflow-x-hidden font-['Nunito_Sans']">
 
   <header
     class="w-full h-[4em] fixed top-0 bg-[rgb(230,231,238)] z-[999] shadow-[6px_6px_12px_rgba(19,19,19,0.10),_-6px_-6px_12px_#fff] overflow-hidden">
@@ -113,7 +114,7 @@
       </div>
     </div>
 
-    <div class="relative w-full h-[200px] overflow-hidden">
+    <div class="relative w-full h-[200px] overflow-hidden shadow-2xl">
       <div class="bg-[#0e0e0e] w-full h-full">
 
         <div class="flex flex-row justify-around w-full max-w-[90%] mx-auto h-full gap-4 md:gap-10">
@@ -154,7 +155,7 @@
                 Play.ThunderMC.ir</div>
               <button
                 class="text-white rounded-tl-none rounded-bl-none rounded-[0.25rem]  bg-[#202020] border-[1px] border-[#3f3f3f] shadow-[3px_3px_6px_#0a0a0a,_-3px_-3px_6px_#2a2a2a85] hover:shadow-[inset_2px_2px_5px_#080808,_inset_-3px_-3px_7px_#2a2a2a85] md:px-[0.6em] px-[0.4em] text-sm md:text-md">
-                Play
+                Copy
               </button>
             </div>
 
@@ -163,7 +164,7 @@
 
           </div>
           <img
-            class="absolute -right-[3.5rem] -top-[10rem] blur-sm opacity-50 w-full max-w-[75em] h-auto pointer-events-none z-10 mx-10"
+            class="absolute -right-[9.5rem] -top-[10rem] blur-sm opacity-70 w-full max-w-[75em] h-auto pointer-events-none z-10 mx-10"
             src="./util/img/purple.png" />
         </div>
 
@@ -175,64 +176,83 @@
 
   <section class="relative w-full min-h-screen">
 
-    <div class="flex flex-col justify-around lg:flex-row">
+    <div class="flex flex-col justify-around lg:flex-row mt-[2em] mb-[1em]">
 
       <div class="mode-card">
-        <img class="mode-img"
-          src="util/img/landscape1.png"/>
+        <img class="mode-img" src="util/img/landscape1.png" />
         <div class="mode-container">
           <div class="mode-logo-wrapper">
-            <img class="mode-logo" src="util/img/thundersolid.png"/>
+            <img class="mode-logo" src="util/img/thundersolid.png" />
           </div>
           <div class="mode-desc-wrapper">
             <div class="mode-desc">
               <div>Survival</div>
               <div id="players">0 Players</div>
             </div>
-            <div
-              class="mode-command">
+            <div class="mode-command">
               /go Survival</div>
           </div>
         </div>
       </div>
 
       <div class="mode-card">
-        <img class="mode-img"
-          src="util/img/landscape2.png"/>
+        <img class="mode-img" src="util/img/landscape2.png" />
         <div class="mode-container">
           <div class="mode-logo-wrapper">
-            <img class="mode-logo" src="util/img/thundersolid.png"/>
+            <img class="mode-logo" src="util/img/thundersolid.png" />
           </div>
           <div class="mode-desc-wrapper">
             <div class="mode-desc">
               <div>Creative</div>
               <div id="players">0 Players</div>
             </div>
-            <div
-              class="mode-command">
+            <div class="mode-command">
               /go Creative</div>
           </div>
         </div>
       </div>
 
       <div class="mode-card">
-        <img class="mode-img"
-          src="util/img/landscape3.jpg"/>
+        <img class="mode-img" src="util/img/landscape3.jpg" />
         <div class="mode-container">
           <div class="mode-logo-wrapper">
-            <img class="mode-logo" src="util/img/thundersolid.png"/>
+            <img class="mode-logo" src="util/img/thundersolid.png" />
           </div>
           <div class="mode-desc-wrapper">
             <div class="mode-desc">
               <div>GTA</div>
               <div id="players">0 Players</div>
             </div>
-            <div
-              class="mode-command">
+            <div class="mode-command">
               /go GTA</div>
           </div>
         </div>
       </div>
+
+    </div>
+
+    <div class="relative w-full h-fit overflow-hidden shadow-2xl">
+      <div class="bg-[#0e0e0e] w-full h-full flex">
+
+        <div class="flex flex-row-reverse mx-auto my-auto h-fit gap-3 md:gap-7 lg:gap-10 py-7">
+
+          <div class="text-white text-right font-['Portada'] text-l p-2">درباره ما</div>
+
+          <div
+            class="text-white text-right max-w-[250px] md:max-w-[400px] lg:max-w-[600px] break-words p-2 font-['YekanBakh']">
+            تیم ما، یک تیم نوپا و خلاق در زمینه گیمینگ است که در تلاش است تا مجموعه ای با کیفیت حداکثر را ممکن سازد. از
+            علاقمندی های ما، اجرای پروژه های جدیدی است
+            که در ایران تا به حال اجرا نشده اند. این مجموعه دارای قابلیت فراهم سازی و کانفیگ تمام گیم سرور های متفرقه
+            خواهد بود
+          </div>
+        </div>
+
+
+      </div>
+
+      <img
+        class="absolute -left-[9.5rem] -top-[5rem] hue-rotate-60 blur-sm w-full opacity-75 max-w-[100em] h-auto pointer-events-none z-10 mx-10"
+        src="./util/img/orange.png" />
 
     </div>
 

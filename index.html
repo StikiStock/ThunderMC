@@ -13,8 +13,6 @@
   <meta name="title" content="Arya Azizi - Front end developer">
 
   <link rel="icon" type="image/x-icon" href="/util/favicon.ico">
-  <link href="http://fonts.cdnfonts.com/css/nunito-sans" rel="stylesheet">
-
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,11 +51,6 @@
     }
 
     @font-face {
-      font-family: 'Lalezar';
-      src: url(./util/font/Lalezar.ttf)
-    }
-
-    @font-face {
       font-family: 'YekanBakh';
       src: url(./util/font/YekanBakh.woff2)
     }
@@ -66,10 +59,10 @@
 </head>
 
 <body
-  class="p-0 m-0 w-full h-full bg-[rgba(230,231,238,0.84)] overflow-x-hidden font-['Nunito_Sans']">
+  class="p-0 m-0 w-full h-full bg-[rgba(230,231,238,0.84)] overflow-x-hidden font-['Inter']">
 
   <header
-    class="w-full h-[4em] fixed top-0 bg-[rgba(230,231,238,0.93)] z-[999] border-b-[1px] border-b-[#cbccd1] overflow-hidden backdrop-blur">
+    class="w-full h-[4em] fixed top-0 bg-[rgba(255,255,255,0.5)] z-[999] overflow-hidden backdrop-blur-[10px] font-['Inter']">
 
     <div header-flexer class="flex flex-row justify-around w-full h-full">
 
@@ -79,9 +72,9 @@
         alt="Thunder MC" onclick="" />
 
       <div class="flex justify-around gap-5 my-auto md:gap-10 lg:gap-16">
-        <a nav1 class="neubutton" href="#about">درباره</a>
-        <a nav2 class="neubutton" href="./store.html">فروشگاه</a>
-        <a nav3 class="neubutton" href="./support.html">پشتیبانی</a>
+        <a nav1 class="nav" href="#about">درباره</a>
+        <a nav2 class="nav" href="./support.html">پشتیبانی</a>
+        <a nav3 class="nav" href="./store.html">فروشگاه</a>
       </div>
 
     </div>
@@ -95,14 +88,13 @@
     <div class="z-10 flex justify-center py-4 mx-5 md:gap-5 lg:gap-16">
 
       <div class="flex justify-around lg:justify-between sm:max-w-[80%] gap-4 lg:gap-16 my-auto">
-        <div class="w-fit">
-          <img model class="w-[115px] md:w-[120px] lg:w-[150px] max-w-full h-auto m-auto drop-shadow-xl"
-            src="util/img/figure2.png" />
-        </div>
+
+        <img model class="w-[115px] md:w-[120px] lg:w-[150px] max-w-full h-auto m-auto drop-shadow-xl" src="util/img/figure2.png" />
+
         <div class="my-auto flex flex-col gap-8 lg:gap-10 max-w-[50%]">
           <div description class="text-center text-xl md:text-2xl lg:max-w-[18rem] font-['Portada'] text-slate-700">سرور
             خوب که دیگه تعریف نمیخواد، بپر بالا</div>
-          <button play button class="relative neubutton mx-auto text-md md:text-lg font-['Portada']">با ما آشنا
+          <button play button class="relative mx-auto text-md md:text-lg font-['Portada']">با ما آشنا
             بشید</button>
         </div>
       </div>
@@ -154,7 +146,7 @@
                 class="text-sm text-white border-r-0 rounded-tr-none rounded-br-none rounded-[0.25rem]  bg-[#131313] border-[1px] border-[#3f3f3f] shadow-[3px_3px_6px_#0a0a0a,_-3px_-3px_6px_#2a2a2a85] text-md md:text-lg md:p-[0.5rem_1em] p-[0.3rem_0.8em] my-auto font-mono">
                 Play.ThunderMC.ir</div>
               <button
-                class="text-white rounded-tl-none rounded-bl-none rounded-[0.25rem]  bg-[#202020] border-[1px] border-[#3f3f3f] shadow-[3px_3px_6px_#0a0a0a,_-3px_-3px_6px_#2a2a2a85] hover:shadow-[inset_2px_2px_5px_#080808,_inset_-3px_-3px_7px_#2a2a2a85] md:px-[0.6em] px-[0.4em] text-sm md:text-md">
+                class="text-white font-mono rounded-tl-none rounded-bl-none rounded-[0.25rem]  bg-[#202020] border-[1px] border-[#3f3f3f] shadow-[3px_3px_6px_#0a0a0a,_-3px_-3px_6px_#2a2a2a85] hover:shadow-[inset_2px_2px_5px_#080808,_inset_-3px_-3px_7px_#2a2a2a85] md:px-[0.6em] px-[0.4em] text-sm md:text-md">
                 Copy
               </button>
             </div>
@@ -246,7 +238,7 @@
         <div class="flex flex-row-reverse gap-3 mx-auto my-auto h-fit md:gap-7 lg:gap-10 py-7">
           <div class="text-white text-right font-['Portada'] text-lg md:text-xl lg:text-3xl p-1">درباره ما</div>
           <div
-            class="text-white text-right max-w-[250px] md:max-w-[400px] lg:max-w-[650px] break-words p-1 font-['YekanBakh'] font-medium text-sm md:text-md lg:text-lg">
+            class="text-slate-200 z-20 text-right max-w-[250px] md:max-w-[400px] lg:max-w-[650px] break-words p-1 font-['YekanBakh'] font-medium text-sm md:text-md lg:text-lg">
             تیم ما، یک تیم نوپا و خلاق در زمینه گیمینگ است که در تلاش است تا مجموعه ای با کیفیت حداکثر را ممکن سازد. از
             علاقمندی های ما، اجرای پروژه های جدیدی است
             که در ایران تا به حال اجرا نشده اند. این مجموعه دارای قابلیت فراهم سازی و کانفیگ تمام گیم سرور های متفرقه خواهد بود؛ ما همچنین پیوسته
@@ -255,32 +247,58 @@
         </div>
       </div>
     <img
-    class="absolute -left-[9.5rem] -top-[5rem] hue-rotate-60 blur-sm w-full opacity-75 max-w-[100em] h-auto pointer-events-none z-10 mx-10"
+    class="absolute -left-[9.5rem] -top-[7rem] hue-rotate-60 blur-sm w-full opacity-50 max-w-[100em] h-auto pointer-events-none z-10 mx-10"
     src="./util/img/orange.png" />
   </section>
 
+  <section>
 
-    <!--<div class="flex flex-row my-5 justify-around">
-      <div class="flex flex-col">
-        <div class="font-mono text-xl">ThunderMc.IR</div>
-        <div class="font-['YekanBakh'] text-gray-800 text-sm mx-auto">تجربه ماینکرفت پارسی</div>
+    <div class="flex flex-col gap-10 my-10">
+      <img class="w-[250px] h-auto mx-auto" src="util/img/steve.svg" />
+      <div class="mx-auto flex flex-col gap-5">
+        <button class="font-['Portada'] bg-gradient-to-bl from-[#F9B37E] via-[#F67C66] to-[#DC5C44] rounded-md p-2 w-fit mx-auto shadow-lg shadow-[#6d2e21] hover:-translate-y-1 transition-all flex flex-row gap-2">
+          <div class="border-r-[1px] border-r-black pr-2">دانلود ماینکرفت</div>
+          <img class="w-[24px] h-auto" src="https://img.icons8.com/material-outlined/96/000000/downloads-folder.png"/>
+        </button>
+        <div class="text-slate-700 font-['YekanBakh'] text-md">اگه ماینکرفتو نداری از اینجا بگیر</div>
       </div>
-      <div class="flex flex-row gap-5">
-        <div class="smedia">
-          <img class="smedia-icon" src="./util/img/discord.svg"/>
-          <div class="smedia-name">Discord</div>
-        </div>
-        <div class="smedia">
-          <img class="smedia-icon" src="./util/img/telegram.svg"/>
-          <div class="smedia-name">Telegram</div>
-        </div>
-        <div class="smedia">
-          <img class="smedia-icon" src="./util/img/instagram.svg"/>
-          <div class="smedia-name">Instagram</div>
-        </div>
-      </div>
-    </div>-->
+    </div>
 
+  </section>
+
+  <section>
+
+      <div class="flex flex-col gap-10 md:gap-0 md:w-auto mx-auto w-fit md:flex-row justify-around my-5">
+
+        <div class="flex flex-row gap-4">
+          <img class="h-[64px] w-auto my-auto opacity-90" src="util/img/thundersolid.png" />
+          <div class="flex flex-col my-auto">
+            <div class="font-mono text-xl">ThunderMc.IR</div>
+            <div class="font-['YekanBakh'] text-gray-800 text-sm mx-auto">تجربه ماینکرفت پارسی</div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <div class="flex flex-row gap-5">
+            <div class="smedia">
+              <img class="smedia-icon" src="./util/img/discord.svg"/>
+              <div class="smedia-name">Discord</div>
+            </div>
+            <div class="smedia">
+              <img class="smedia-icon" src="./util/img/telegram.svg"/>
+              <div class="smedia-name">Telegram</div>
+            </div>
+            <div class="smedia">
+              <img class="smedia-icon" src="./util/img/instagram.svg"/>
+              <div class="smedia-name">Instagram</div>
+            </div>
+          </div>
+          <div class="font-mono mx-auto">Made by <a class="text-sky-600 hover:text-sky-800" href="https://stiki.ir" target="_blank">Stiki</a></div>
+        </div>
+      </div>
+      
+
+  </section>
 
 
 </body>

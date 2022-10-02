@@ -25,12 +25,8 @@
         @apply opacity-100 translate-y-[-5px]
     }
 
-    .neubutton {
-        @apply rounded-[0.55rem] p-[0.3rem_0.4rem] md:p-[0.40rem_0.47.5rem] lg:p-[0.45rem_0.5rem] bg-[#e6e7eeaf] border-[1px] border-[#d1d9e6] shadow-[3px_3px_6px_#b8b9be,_-3px_-3px_6px_#fff] text-[#44476a] font-['Portada']
-    }
-
-    .neubutton:hover {
-        @apply text-[#555b8a] bg-[#e6e7ee] border-[1px] border-[#e6e7ee] shadow-[inset_2px_2px_5px_#b8b9be,_inset_-3px_-3px_7px_#fff]
+    .nav {
+        @apply font-['Portada']
     }
 
     .grid-item {

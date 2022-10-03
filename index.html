@@ -62,7 +62,7 @@
   class="p-0 m-0 w-full h-full bg-[rgba(230,231,238,0.84)] overflow-x-hidden font-['Inter']">
 
   <header
-    class="w-full h-[4em] fixed top-0 bg-[rgba(255,255,255,0.5)] z-[999] overflow-hidden backdrop-blur-[10px] font-['Inter']">
+    class="w-full h-[4em] fixed top-0 bg-[rgba(235,235,235,0.5)] z-[999] overflow-hidden backdrop-blur-[10px] font-['Inter'] border-b-[#74747481] border-b-[1px]">
 
     <div header-flexer class="flex flex-row justify-around w-full h-full">
 
@@ -254,9 +254,10 @@
   <section>
 
     <div class="flex flex-col gap-10 my-10">
-      <img class="w-[250px] h-auto mx-auto" src="util/img/steve.svg" />
-      <div class="mx-auto flex flex-col gap-5">
-        <button class="font-['Portada'] bg-gradient-to-bl from-[#F9B37E] via-[#F67C66] to-[#DC5C44] rounded-md p-2 w-fit mx-auto shadow-lg shadow-[#6d2e21] hover:-translate-y-1 transition-all flex flex-row gap-2">
+      <img class="w-[400px] h-auto mx-auto bg-slate-300 rounded-full" src="util/img/model1.png" />
+      <div class="flex flex-col gap-5 mx-auto">
+        <button class="font-['Portada'] bg-gradient-to-bl from-[#F9B37E] via-[#F67C66] to-[#DC5C44] rounded-md p-2 w-fit mx-auto hover:opacity-90 shadow-lg hover:shadow-md hover:shadow-[#6d2e21] shadow-[#6d2e21] transition-all flex flex-row gap-2"
+        onclick="window.open('https://dl2.tlauncher.org/f.php?f=files%2FTLauncher-2.841-Installer-0.9.9.exe')">
           <div class="border-r-[1px] border-r-black pr-2">دانلود ماینکرفت</div>
           <img class="w-[24px] h-auto" src="https://img.icons8.com/material-outlined/96/000000/downloads-folder.png"/>
         </button>
@@ -268,7 +269,7 @@
 
   <section>
 
-      <div class="flex flex-col gap-10 md:gap-0 md:w-auto mx-auto w-fit md:flex-row justify-around my-5">
+      <div class="flex flex-col justify-around gap-10 mx-auto my-5 md:gap-0 md:w-auto w-fit md:flex-row">
 
         <div class="flex flex-row gap-4">
           <img class="h-[64px] w-auto my-auto opacity-90" src="util/img/thundersolid.png" />
@@ -280,20 +281,20 @@
 
         <div class="flex flex-col gap-2">
           <div class="flex flex-row gap-5">
-            <div class="smedia">
+            <div class="smedia" onclick="window.open('https://discord.com')">
               <img class="smedia-icon" src="./util/img/discord.svg"/>
               <div class="smedia-name">Discord</div>
             </div>
-            <div class="smedia">
+            <div class="smedia" onclick="window.open('https://telegram.com')">
               <img class="smedia-icon" src="./util/img/telegram.svg"/>
               <div class="smedia-name">Telegram</div>
             </div>
-            <div class="smedia">
+            <div class="smedia" onclick="window.open('https://instagram.com')">
               <img class="smedia-icon" src="./util/img/instagram.svg"/>
               <div class="smedia-name">Instagram</div>
             </div>
           </div>
-          <div class="font-mono mx-auto">Made by <a class="text-sky-600 hover:text-sky-800" href="https://stiki.ir" target="_blank">Stiki</a></div>
+          <div class="mx-auto font-mono"><a class="text-sky-600 hover:text-sky-900" href="https://stiki.ir" target="_blank">Stiki.ir</a></div>
         </div>
       </div>
       

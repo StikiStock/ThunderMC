@@ -26,7 +26,11 @@
     }
 
     .nav {
-        @apply font-['Portada'] text-slate-800 hover:text-slate-500
+        @apply font-['Portada'] text-black hover:opacity-75 transition-all flex flex-row gap-1
+    }
+
+    .nav-icon {
+        @apply w-[20px] h-auto my-auto scale-x-[-1]
     }
 
     .grid-item {
@@ -46,11 +50,11 @@
     }
 
     .mode-img {
-        @apply  w-full h-auto mx-auto rounded-md shadow-sm shadow-slate-500
+        @apply  w-full h-auto mx-auto rounded-md shadow-md shadow-slate-400
     }
 
     .mode-container {
-        @apply bg-[#ffffff81] w-[80%] h-[80px] rounded-md mx-auto -translate-y-2/3 shadow-lg shadow-slate-500 flex backdrop-blur
+        @apply bg-[#ffffff5d] w-[80%] h-[80px] rounded-md mx-auto -translate-y-2/3 shadow-lg shadow-slate-400 flex backdrop-blur
     }
 
     .mode-logo-wrapper {

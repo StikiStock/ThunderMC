@@ -30,7 +30,7 @@
     }
 
     .nav {
-        @apply font-['Portada'] text-white hover:opacity-75 transition-all flex flex-row gap-1
+        @apply font-['Portada'] text-white hover:text-orange-300 transition-all flex flex-row gap-1
     }
 
     .nav-icon {

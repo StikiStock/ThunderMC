@@ -12,7 +12,7 @@
 
   <meta name="title" content="Arya Azizi - Front end developer">
 
-  <link rel="icon" type="image/x-icon" href="/util/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./util/icon/favicon.ico">
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,9 +67,9 @@
 
     <div header-flexer class="flex flex-row w-full h-full justify-evenly">
 
-      <img big-logo class="hidden md:block lg:block w-[250px] h-auto mx-16 my-auto drop-shadow-md"
+      <img big-logo class="hidden md:block lg:block w-[250px] h-auto mx-16 my-auto drop-shadow-md hover:cursor-pointer" onclick="window.location = 'https://thundermc.ir'"
         src="util/img/thunderlogo2.png" alt="Thunder MC" />
-      <img small-logo class="block md:hidden lg:hidden w-auto h-[50px] my-auto " src="util/img/thunderlogo1.png"
+      <img small-logo class="block md:hidden lg:hidden w-auto h-[50px] my-auto hover:cursor-pointer" src="util/img/thunderlogo1.png"
         alt="Thunder MC" onclick="" />
 
       <div class="flex justify-around gap-5 my-auto md:gap-10 lg:gap-16">
@@ -102,7 +102,7 @@
         <div class="my-auto flex flex-col gap-8 lg:gap-10 max-w-[50%] ml-5 md:ml-0">
           <div description class="description load-hidden text-center text-lg font-['Portada'] text-slate-300 max-w-[200px]">سرور خوب که دیگه تعریف نمیخواد جیگرت برم</div>
 
-          <a onclick="window.scrollBy(0, 300)" class="cursor-pointer relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md w-full mx-auto">
+          <a onclick="window.scrollBy(0, window.innerHeight + 200)" class="lesgo load-hidden cursor-pointer relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md w-full mx-auto">
             <span class="w-full h-full bg-gradient-to-br from-[#F67862] to-[#9C3A25] group-hover:from-[#9C3A25] group-hover:to-[#F67862] absolute"></span>
             <span class="relative px-4 py-2 transition-all ease-out bg-[#1B1B1B] rounded-md group-hover:bg-opacity-0 duration-400 w-full text-center">
               <span class="relative text-white font-['Portada'] text-sm mx-auto">بزن بریم</span>
@@ -240,11 +240,13 @@
 
           <div class="flex flex-row mx-auto">
             <div
-              class="text-sm text-white border-r-0 rounded-tr-none rounded-br-none rounded-[0.25rem]  bg-[#131313] border-[1px] border-[#3f3f3f] shadow-[3px_3px_6px_#0a0a0a,_-3px_-3px_6px_#2a2a2a85] text-md md:text-lg md:p-[0.5rem_1em] p-[0.3rem_0.8em] my-auto font-mono">
+              class="text-sm text-white border-r-0 rounded-tr-none rounded-br-none rounded-[0.25rem]  bg-[#131313] border-[1px] border-[#3f3f3f] shadow-[3px_3px_6px_#0a0a0a,_-3px_-3px_6px_#2a2a2a85] text-md md:text-lg md:p-[0.5rem_1em] p-[0.3rem_0.8em] my-auto font-mono"
+                id="ip">
               Play.ThunderMC.ir</div>
             <button
               onclick="copy_text()"
-              class="text-white font-mono rounded-tl-none rounded-bl-none rounded-[0.25rem]  bg-[#202020] border-[1px] border-[#3f3f3f] shadow-[3px_3px_6px_#0a0a0a,_-3px_-3px_6px_#2a2a2a85] hover:shadow-[inset_2px_2px_5px_#080808,_inset_-3px_-3px_7px_#2a2a2a85] md:px-[0.6em] px-[0.4em] text-sm md:text-md">
+                class="text-white transition-all font-mono rounded-tl-none rounded-bl-none rounded-[0.25rem] bg-[#202020] border-[1px] border-[#3f3f3f] shadow-[3px_3px_6px_#0a0a0a,_-3px_-3px_6px_#2a2a2a85] hover:shadow-[inset_2px_2px_5px_#080808,_inset_-3px_-3px_7px_#2a2a2a85] focus:shadow-[inset_2px_2px_5px_#080808,_inset_-3px_-3px_7px_#2a2a2a85] md:px-[0.6em] px-[0.4em] text-sm md:text-md"
+                id="copybutton">
               Copy
             </button>
           </div>
@@ -263,7 +265,7 @@
 
   <section class="relative overflow-hidden pt-[2rem]">
 
-    <div class="absolute inset-0 invert bg-[url(https://play.tailwindcss.com/img/grid.svg)] bg-center opacity-25 [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+    <div class="absolute inset-0 invert bg-[url(https://play.tailwindcss.com/img/grid.svg)] bg-center opacity-50 [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
 
     <div dlmc>
       <div class="flex flex-col gap-10 py-10 md:pt-10">
@@ -321,19 +323,20 @@
     });
 
     ScrollReveal().reveal('.description',{origin: 'top', delay: 50, distance: '20px'});
+    ScrollReveal().reveal('.lesgo',{origin: 'bottom', delay: 50, distance: '15px'});
     ScrollReveal().reveal('.landscape',{origin: 'right', delay: 50, distance: '20px'});
     ScrollReveal().reveal('.models',{origin: 'left', delay: 50, distance: '20px'});
     ScrollReveal().reveal('.aboutmain',{origin: 'bottom', delay: 100, distance: '20px'});
-    ScrollReveal().reveal('.about-title',{origin: 'bottom', delay: 150, distance: '20px'});
-    ScrollReveal().reveal('.about-desc',{origin: 'bottom', delay: 250, distance: '20px'});
-    ScrollReveal().reveal('.about-img',{origin: 'bottom', delay: 350, distance: '20px'});
-    ScrollReveal().reveal('.card1',{delay: 250, scale: 0.85});
-    ScrollReveal().reveal('.card2',{delay: 150, scale: 0.85});
-    ScrollReveal().reveal('.card3',{delay: 50, scale: 0.85});
+    ScrollReveal().reveal('.about-title',{origin: 'bottom', delay: 100, distance: '20px'});
+    ScrollReveal().reveal('.about-desc',{origin: 'bottom', delay: 200, distance: '20px'});
+    ScrollReveal().reveal('.about-img',{origin: 'bottom', delay: 300, distance: '20px'});
+    ScrollReveal().reveal('.card1',{origin: 'top', delay: 150, distance: '15px'});
+    ScrollReveal().reveal('.card2',{origin: 'top', delay: 100, distance: '15px'});
+    ScrollReveal().reveal('.card3',{origin: 'top', delay: 50, distance: '15px'});
     ScrollReveal().reveal('.gridsec',{origin: 'bottom', delay: 100, distance: '15px'});
     ScrollReveal().reveal('.mcmodel',{origin: 'bottom', delay: 100, distance: '20px'});
     ScrollReveal().reveal('.dlbutton',{origin: 'bottom', scale: 0.85, delay: 100, distance: '20px'});
-    ScrollReveal().reveal('.footer',{origin: 'bottom', delay: 150, distance: '30px'});
+    ScrollReveal().reveal('.footer',{origin: 'bottom', delay: 50, distance: '20px'});
 
 
   </script>

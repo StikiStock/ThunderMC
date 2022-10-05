@@ -12,6 +12,7 @@ const observer = new IntersectionObserver((entries) => {
 
 const animated = document.querySelectorAll('.animated');
 animated.forEach((el) => observer.observe(el));
+<<<<<<< HEAD
 
 function copy_text() {
     var copyText = document.getElementById("ip-text");  
@@ -21,14 +22,4 @@ function copy_text() {
     input.select();
     document.execCommand("Copy");
     input.remove();
-    let cp = document.querySelector('#copysvg')
-    cp.src="prop/svg/thundercopy.svg";
-    let copied = document.getElementById('copied-message')
-    copied.style.display = "flex";
-    copied.classList.add("copied_anim")
-    const realTimeout = setTimeout(function() {
-        copied.classList.remove("copied_anim");
-        copied.style.display = "none";
-        cp.src="prop/svg/copy.svg"
-    }, 1500);
 };

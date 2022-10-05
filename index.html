@@ -59,12 +59,12 @@
 </head>
 
 <body
-  class="p-0 m-0 w-full h-full bg-[rgba(230,231,238,0.84)] overflow-x-hidden font-['Inter']">
+  class="p-0 m-0 w-full h-full bg-[#1b1b1b] overflow-x-hidden font-['Inter']">
 
-  <header
-    class="w-full h-[4em] fixed top-0 bg-[rgba(235,235,235,0.5)] z-[999] overflow-hidden backdrop-blur-[10px] font-['Inter'] border-b-[#74747481] border-b-[1px]">
+  <header navbar
+    class="w-full h-[4em] fixed top-0 bg-[rgba(48,48,48,0.5)] z-[999] overflow-hidden backdrop-blur-[10px] font-['Inter'] border-b-[#74747481] border-b-[1px]">
 
-    <div header-flexer class="flex flex-row justify-around w-full h-full">
+    <div header-flexer class="flex flex-row w-full h-full justify-evenly">
 
       <img big-logo class="hidden md:block lg:block w-[250px] h-auto mx-16 my-auto drop-shadow-md"
         src="util/img/thunderlogo2.png" alt="Thunder MC" />
@@ -80,54 +80,56 @@
     </div>
   </header>
 
-  <section sec2 class="relative flex flex-col justify-around w-full mt-[4em] min-h-[calc(100vh-4em)] h-full">
-    <div grid
-      class="absolute inset-0 bg-[url(https://play.tailwindcss.com/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] z-0">
-    </div>
+  <section top section main sec2 class="mt-[4em] overflow-hidden">
+    <div class="absolute inset-0 invert bg-[url(https://play.tailwindcss.com/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
 
-    <div class="z-10 flex justify-center py-4 mx-5 md:gap-5 lg:gap-16">
+    <div class="z-10 flex justify-center py-16 mx-5 my-auto md:gap-5 lg:gap-16">
 
       <div class="flex justify-around lg:justify-between sm:max-w-[80%] gap-4 lg:gap-16 my-auto">
 
-        <img model class="w-[115px] md:w-[120px] lg:w-[150px] max-w-full h-auto m-auto drop-shadow-xl" src="util/img/figure2.png" />
+        <div class="relative">
+          <img model class="z-50 relative w-[160px] md:w-[190px] lg:w-[250px] max-w-full h-auto m-auto drop-shadow-xl" src="util/img/figure3a.png" />
 
-        <div class="my-auto flex flex-col gap-8 lg:gap-10 max-w-[50%] mr-5">
-          <div description class="text-center text-xl md:text-2xl lg:max-w-[18rem] font-['Portada'] text-slate-700">سرور
-            خوب که دیگه تعریف نمیخواد جیگرت برم</div>
-          <button play button class="relative mx-auto text-md md:text-lg font-['Portada']">با ما آشنا
-            بشید</button>
+          <div animate-hovering class="z-10">
+            <img model class="model -top-3 -right-3" id="model1" src="util/img/figure2a.png" />
+            <img model class="model -top-3 -left-3" id="model2" src="util/img/figure1a.png" />
+            <img model class="model -bottom-3 -right-3" id="model3" src="util/img/figure4a.png" />
+            <img model class="model -bottom-3 -left-3" id="model4" src="util/img/figure5a.png" />
+          </div>
+        </div>
+
+        <div class="my-auto flex flex-col gap-8 lg:gap-10 max-w-[50%]">
+          <div description class="text-center text-lg font-['Portada'] text-slate-300">سرور خوب که دیگه تعریف نمیخواد<br>جیگرت برم</div>
         </div>
       </div>
 
-      <div class="relative my-auto">
-
-        <img landscape class="hidden md:block w-[450px] max-w-full h-auto rounded-sm animate-drop-bottom bg-[#282e3f00]"
-          src="util/img/landscape1.png" />
+      <div class="relative my-auto ">
+        <img landscape class="hidden md:block w-[450px] max-w-full h-auto rounded-md" src="util/img/landscape1.png" />
       </div>
     </div>
+  </section>
 
-    <section class="relative w-full overflow-hidden shadow-2xl h-[200px]" id="about">
-      <div class="bg-[#0e0e0e] w-full h-full flex">
-        <div class="flex flex-row-reverse gap-3 mx-auto my-auto h-fit md:gap-7 lg:gap-10 py-7">
-          <div class="text-white text-right font-['Portada'] text-lg md:text-xl lg:text-3xl p-1">درباره ما</div>
+    <section about class="relative w-full overflow-hidden shadow-[#111111] shadow-xl h-[200px] border-y-[#74747444] border-y-[1px]" id="about">
+      <div class="bg-[#0e0e0e] w-full h-full flex overflow-hidden">
+        <div class="flex flex-row-reverse gap-3 my-auto md:my-0 overflow-hidden justify-evenly w-full">
+          <div class="text-white whitespace-nowrap text-right font-['Portada'] text-lg md:text-xl lg:text-3xl p-1 h-fit md:my-auto">درباره ما</div>
           <div
-            class="text-slate-200 z-20 text-right max-w-[250px] md:max-w-[400px] lg:max-w-[650px] break-words p-1 font-['YekanBakh'] font-medium text-sm md:text-md lg:text-lg">
+            class="text-slate-200 z-20 text-center max-w-[260px] md:max-w-[400px] lg:max-w-[650px] break-words p-1 font-['YekanBakh'] font-medium text-sm md:text-lg h-fit my-auto">
             تیم ما، یک تیم نوپا و خلاق در زمینه گیمینگ است که در تلاش است تا مجموعه ای با کیفیت حداکثر را ممکن سازد. از
             علاقمندی های ما، اجرای پروژه های جدیدی است
             که در ایران تا به حال اجرا نشده اند
           </div>
+          <img class="hidden md:block max-w-[14rem] w-full h-auto my-auto py-5" src="./util/img/mcmodel2.png" />
         </div>
       </div>
-    <img
-    class="absolute -left-[9.5rem] -top-[7rem] hue-rotate-60 blur-sm w-full opacity-50 max-w-[100em] h-auto pointer-events-none z-10 mx-10"
-    src="./util/img/orange.png" />
-  </section>
+      <img
+      class="absolute -left-[15rem] -top-[7rem] hue-rotate-60 blur-sm w-full opacity-50 max-w-[100em] h-auto pointer-events-none z-10 mx-10"
+      src="./util/img/orange.png" />
+    </section>
 
-  </section>
+  <section gamemodes class="relative w-full bg-[#1B1B1B] py-16">
 
-  <section class="relative w-full">
-
-    <div class="flex flex-col justify-around lg:flex-row my-[2em] md:my-[4em]">
+    <div class="flex flex-col justify-around lg:flex-row">
 
       <div class="mode-card">
         <img class="mode-img" src="util/img/landscape1.png" />
@@ -191,13 +193,9 @@
     </div>
 
   </section>
-  
-  <div class="mb-5 font-['Portada'] text-xl w-fit mx-auto bg-[#ffffff6c] rounded-md p-2 backdrop-blur">
-    ...بزار حدس بزنم
-  </div>
 
-  <section class="relative w-full h-[200px] overflow-hidden shadow-2xl">
-    <div class="bg-[#0e0e0e] w-full h-full">
+  <section khodrezayatixD class="relative w-full h-[200px] overflow-hidden shadow-[#111111] shadow-xl border-y-[#74747444] border-y-[1px]">
+    <div class="bg-[#0E0E0E] w-full h-full">
 
       <div class="flex flex-row justify-around w-full max-w-[90%] mx-auto h-full gap-4 md:gap-10">
 
@@ -205,22 +203,22 @@
           class="z-20 grid grid-cols-2 grid-rows-2 gap-2 overflow-hidden md:m-0 md:flex md:gap-10 lg:gap-16 md:my-auto">
 
           <div class="grid-item">
-            <img class="grid-item-img" src="./util/img/robot.png" />
+            <img class="grid-item-img" src="./util/icon/robot.png" />
             <div class="grid-item-txt">از بات ها خسته شدی</div>
           </div>
 
           <div class="grid-item">
-            <img class="grid-item-img" src="./util/img/lag.png" />
+            <img class="grid-item-img" src="./util/icon/lag.png" />
             <div class="grid-item-txt">همیشه با لگ بازی میکنی</div>
           </div>
 
           <div class="grid-item">
-            <img class="grid-item-img" src="./util/img/slow.png" />
+            <img class="grid-item-img" src="./util/icon/slow.png" />
             <div class="grid-item-txt">فریمت گاهی کم میاره</div>
           </div>
 
           <div class="grid-item">
-            <img class="grid-item-img" src="./util/img/boring.png" />
+            <img class="grid-item-img" src="./util/icon/boring.png" />
             <div class="grid-item-txt">حوصلت داغون شده</div>
           </div>
 
@@ -253,56 +251,55 @@
     </div>
   </section>
 
-  <section>
-
-    <div class="flex flex-col gap-10 my-16">
-      <img class="w-full max-w-[350px] md:max-w-[400px] h-auto mx-auto bg-slate-300 rounded-full" src="util/img/model1.png" />
-      <div class="flex flex-col gap-5 mx-auto">
-        <button class="font-['Portada'] bg-gradient-to-bl from-[#F9B37E] via-[#F67C66] to-[#DC5C44] rounded-md p-2 w-fit mx-auto hover:opacity-90 shadow-lg hover:shadow-md hover:shadow-[#6d2e21] shadow-[#6d2e21] transition-all flex flex-row gap-2"
-        onclick="window.open('https://dl2.tlauncher.org/f.php?f=files%2FTLauncher-2.841-Installer-0.9.9.exe')">
-          <div class="border-r-[1px] border-r-black pr-2">دانلود ماینکرفت</div>
-          <img class="w-[24px] h-auto" src="https://img.icons8.com/material-outlined/96/000000/downloads-folder.png"/>
-        </button>
-        <div class="text-slate-700 font-['YekanBakh'] text-md">اگه ماینکرفتو نداری از اینجا بگیر</div>
+  <section class="relative overflow-hidden">
+    <div dlmc>
+      <div class="flex flex-col gap-10 py-16">
+        <img class="w-full shadow-[#111111] shadow-xl max-w-[350px] md:max-w-[400px] h-auto mx-auto bg-gradient-to-b from-[#15111E] to-[#18100F] rounded-full border-[1px] border-white" src="util/img/mcmodel.png" />
+        <div class="flex flex-col gap-5 mx-auto">
+          <button class="font-['Portada'] bg-gradient-to-bl from-[#F9B37E] via-[#F67C66] to-[#DC5C44] rounded-md p-2 w-fit mx-auto hover:opacity-90 shadow-lg hover:shadow-md hover:shadow-[#6d2e21] shadow-[#6d2e21] transition-all flex flex-row gap-2"
+          onclick="window.open('https://dl2.tlauncher.org/f.php?f=files%2FTLauncher-2.841-Installer-0.9.9.exe')">
+            <div class="border-r-[1px] border-r-black pr-2">دانلود ماینکرفت</div>
+            <img class="w-[24px] h-auto" src="https://img.icons8.com/material-outlined/96/000000/downloads-folder.png"/>
+          </button>
+          <div class="text-slate-300 font-['YekanBakh'] text-md">اگه ماینکرفتو نداری از اینجا بگیر</div>
+        </div>
       </div>
     </div>
 
-  </section>
+    <div contact-,logo-,author->
 
-  <section>
+      <div class="relative flex flex-col justify-around gap-10 py-5 mx-auto md:gap-0 md:w-auto w-fit md:flex-row">
 
-      <div class="flex flex-col justify-around gap-10 mx-auto my-5 md:gap-0 md:w-auto w-fit md:flex-row">
-
-        <div class="flex flex-row gap-4">
-          <img class="h-[64px] w-auto my-auto opacity-90" src="util/img/thundersolid.png" />
+        <div class="flex flex-row gap-4 mx-auto md:mx-0">
+          <img class="h-[48px] md:h-[64px] w-auto my-auto opacity-90 invert" src="util/img/thundersolid.png" />
           <div class="flex flex-col my-auto">
-            <div class="font-mono text-xl">ThunderMc.IR</div>
-            <div class="font-['YekanBakh'] text-gray-800 text-sm mx-auto">تجربه ماینکرفت پارسی</div>
+            <div class="font-mono text-lg text-white">Play.ThunderMc.IR</div>
+            <div class="font-['YekanBakh'] text-gray-400 text-sm mx-auto">تجربه ماینکرفت پارسی</div>
           </div>
         </div>
 
         <div class="flex flex-col gap-2">
-          <div class="flex flex-row gap-5">
+          <div class="flex flex-row gap-8 md:gap-5">
             <div class="smedia" onclick="window.open('https://discord.com')">
-              <img class="smedia-icon" src="./util/img/discord.svg"/>
+              <img class="smedia-icon" src="./util/icon/discord.svg"/>
               <div class="smedia-name">Discord</div>
             </div>
             <div class="smedia" onclick="window.open('https://telegram.com')">
-              <img class="smedia-icon" src="./util/img/telegram.svg"/>
+              <img class="smedia-icon" src="./util/icon/telegram.svg"/>
               <div class="smedia-name">Telegram</div>
             </div>
             <div class="smedia" onclick="window.open('https://instagram.com')">
-              <img class="smedia-icon" src="./util/img/instagram.svg"/>
+              <img class="smedia-icon" src="./util/icon/instagram.svg"/>
               <div class="smedia-name">Instagram</div>
             </div>
           </div>
-          <div class="mx-auto font-mono"><a class="text-sky-600 hover:text-sky-900" href="https://stiki.ir" target="_blank">stiki.ir</a></div>
+          <div class="mx-auto font-mono"><a class="text-sky-500 hover:text-sky-300" href="https://stiki.ir" target="_blank">stiki.ir</a></div>
         </div>
       </div>
-      
+
+    </div>
 
   </section>
-
 
 </body>
 

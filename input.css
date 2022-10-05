@@ -26,11 +26,15 @@
     }
 
     .nav {
-        @apply font-['Portada'] text-black hover:opacity-75 transition-all flex flex-row gap-1
+        @apply font-['Portada'] text-white hover:opacity-75 transition-all flex flex-row gap-1
     }
 
     .nav-icon {
-        @apply w-[20px] h-auto my-auto scale-x-[-1]
+        @apply w-[20px] h-auto my-auto scale-x-[-1] invert
+    }
+
+    .model {
+        @apply absolute animate-hovering w-[46px] md:w-[60px] lg:w-[75px] max-w-full h-auto
     }
 
     .grid-item {
@@ -46,15 +50,15 @@
     }
 
     .mode-card {
-        @apply px-4 max-w-[320px] md:max-w-[420px] lg:max-w-[400px] mx-auto
+        @apply px-4 max-w-[320px] md:max-w-[420px] lg:max-w-[400px] mx-auto text-white relative
     }
 
     .mode-img {
-        @apply  w-full h-auto mx-auto rounded-md shadow-md shadow-slate-400
+        @apply w-full h-auto mx-auto rounded-md shadow-lg shadow-[#141414]
     }
 
     .mode-container {
-        @apply bg-[#ffffff5d] w-[80%] h-[80px] rounded-md mx-auto -translate-y-2/3 shadow-lg shadow-slate-400 flex backdrop-blur
+        @apply bg-[#24242434] w-[80%] h-[80px] rounded-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mx-auto flex backdrop-blur-lg shadow-md shadow-[#05050556]
     }
 
     .mode-logo-wrapper {
@@ -62,7 +66,7 @@
     }
 
     .mode-logo {
-        @apply w-[18px] h-auto my-auto
+        @apply w-[18px] h-auto my-auto invert
     }
 
     .mode-desc-wrapper {
@@ -70,7 +74,7 @@
     }
 
     .mode-desc {
-        @apply flex flex-row justify-evenly font-mono py-[1px]
+        @apply flex flex-row justify-around font-mono py-[1px]
     }
 
     .mode-name {
@@ -86,24 +90,23 @@
     }
 
     .mode-player-icon {
-        @apply w-[18px] h-[18px] my-auto flex
+        @apply w-[18px] h-[18px] my-auto flex invert
     }
 
-    
     .mode-command {
-        @apply font-mono bg-[#111111] text-white w-full h-full flex items-center justify-center rounded-br-md rounded-bl-none
+        @apply font-mono text-white border-t-[1px] border-[#1111113b] w-full h-full flex items-center justify-center
     }
 
     .smedia {
-        @apply flex flex-col opacity-[85%] hover:opacity-100 hover:cursor-pointer transition-all gap-1 my-auto
+        @apply flex flex-col opacity-[70%] hover:opacity-100 hover:cursor-pointer gap-1 my-auto
     }
 
     .smedia-icon {
-        @apply w-[24px] h-auto mx-auto
+        @apply w-[24px] h-auto mx-auto invert
     }
 
     .smedia-name {
-        @apply font-mono text-[0.7rem] text-slate-700
+        @apply font-mono text-[0.7rem] text-slate-200
     }
 }
 

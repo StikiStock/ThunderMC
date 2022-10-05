@@ -11,7 +11,7 @@ module.exports = {
         "hovering": {
             "0%": {
                 transform: "translateY(10px)",
-                filter: "drop-shadow(0px 4px 5px #000)"
+                filter: "drop-shadow(0px 4px 8px #000)"
             },
             "50%": {
               transform: "translateY(0px)",
@@ -19,7 +19,7 @@ module.exports = {
             },
             "100%": {
                 transform: "translateY(10px)",
-                filter: "drop-shadow(0px 4px 5px #000)"
+                filter: "drop-shadow(0px 4px 8px #000)"
             }
         }
       }

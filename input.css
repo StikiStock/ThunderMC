@@ -8,6 +8,10 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
+
+    html.sr .load-hidden {
+        visibility: hidden;
+    }
     
       *, *:before, *:after {
         -webkit-box-sizing: inherit;
@@ -50,19 +54,19 @@
     }
 
     .mode-card {
-        @apply px-4 max-w-[320px] md:max-w-[420px] lg:max-w-[400px] mx-auto text-white relative
+        @apply px-4 max-w-[320px] md:max-w-[420px] lg:max-w-[400px] mx-auto text-white relative my-5 lg:my-0
     }
 
     .mode-img {
-        @apply w-full h-auto mx-auto rounded-md shadow-lg shadow-[#141414]
+        @apply w-full h-auto mx-auto rounded-md shadow-xl shadow-[#0c0c0cad]
     }
 
     .mode-container {
-        @apply bg-[#24242434] w-[80%] h-[80px] rounded-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mx-auto flex backdrop-blur-lg shadow-md shadow-[#05050556]
+        @apply bg-[#24242463] w-[80%] h-[80px] rounded-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mx-auto flex backdrop-blur shadow-md shadow-[#05050556]
     }
 
     .mode-logo-wrapper {
-        @apply flex px-2 border-r-[1px] border-[#1111113b]
+        @apply flex px-4 border-r-[1px] border-[#1111113b]
     }
 
     .mode-logo {

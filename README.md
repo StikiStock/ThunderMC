@@ -3,16 +3,18 @@
 
 *This repository is an ongoing project*
 
-The future template of ThunderMc.IR - I decided to make the source open to public for educational use.
-This website is being made using TailwindCSS.
+The future template of ThunderMc.IR - I decided to make the source open to public for education purposes.
+Feel free to open a pull request for any reason
 
 ## Features
 
 - Fully Responsive
 - Written in Tailwind
-- Neumorphism Design
-- Dark Mode Toggle (Soon)
-
+- Dark theme
+- Light Mode Toggle (Soon)
+- Scroll animations
+- According to global Standard UX
+- Made with love
 
 ## Optimizations
 

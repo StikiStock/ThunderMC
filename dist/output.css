@@ -555,20 +555,13 @@ html {
   box-sizing: border-box;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
   scroll-behavior: smooth
-}
-
-.animated {
-  transition: all 450ms ease-in-out;
-  opacity: 0
-}
-
-.shown {
-  --tw-translate-y: -5px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  opacity: 1;
 }
 
 .nav {

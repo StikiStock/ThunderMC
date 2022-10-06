@@ -8,6 +8,10 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
+
+    html.sr .load-hidden {
+        visibility: hidden;
+    }
     
       *, *:before, *:after {
         -webkit-box-sizing: inherit;

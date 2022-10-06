@@ -555,10 +555,6 @@ html {
   box-sizing: border-box;
 }
 
-html.sr .load-hidden {
-  visibility: hidden;
-}
-
 *, *:before, *:after {
   box-sizing: inherit;
   scroll-behavior: smooth

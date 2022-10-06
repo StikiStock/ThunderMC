@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "hovering": "hovering 5s ease-in-out infinite"
+        "hovering": "hovering 3s ease-in-out infinite"
     },
     keyframes: {
         "hovering": {

@@ -15,5 +15,4 @@ function copy_text() {
         copybutton.blur()
     }, 1550);
     
-    
 };

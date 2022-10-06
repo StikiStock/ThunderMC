@@ -30,7 +30,7 @@
     }
 
     .nav {
-        @apply font-['Portada'] text-white hover:text-orange-300 transition-all flex flex-row gap-1
+        @apply font-['Portada'] text-white hover:text-yellow-400 transition-all flex flex-row gap-1
     }
 
     .nav-icon {
@@ -58,11 +58,11 @@
     }
 
     .mode-img {
-        @apply w-full h-auto mx-auto rounded-md shadow-xl shadow-[#0c0c0cad]
+        @apply w-full h-auto mx-auto rounded-md shadow-md shadow-[#0c0c0cad]
     }
 
     .mode-container {
-        @apply bg-[#24242463] w-[80%] h-[80px] rounded-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mx-auto flex backdrop-blur shadow-md shadow-[#05050556]
+        @apply bg-[#24242463] w-[80%] h-[80px] rounded-md -translate-y-2/3 mx-auto flex backdrop-blur shadow-xl shadow-[#05050556]
     }
 
     .mode-logo-wrapper {

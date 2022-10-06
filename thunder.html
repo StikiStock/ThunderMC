@@ -46,8 +46,6 @@
     }
   </script>
 
-  <meta name="google-site-verification" content="LrQCPw1qdNcGWEXCZdC_cdlhbgSy2wHYSaDzaYanA54" />
-
   <link href="./dist/output.css" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
@@ -68,7 +66,7 @@
 <body class="p-0 m-0 w-full h-full bg-[#1b1b1b] overflow-x-hidden">
 
   <header navbar
-    class="w-full header load-hidden h-[4em] fixed top-0 bg-[rgba(48,48,48,0.5)] z-[99] overflow-hidden backdrop-blur-[10px] border-b-[#74747481] border-b-[1px]">
+    class="w-full h-[4em] fixed load-hidden header top-0 bg-[rgba(48,48,48,0.5)] z-[999] overflow-hidden backdrop-blur-[10px] border-b-[#74747481] border-b-[1px]">
 
     <div header-flexer class="flex flex-row w-full h-full justify-evenly">
 
@@ -112,25 +110,17 @@
 
         <div class="my-auto flex flex-col gap-8 lg:gap-10 max-w-[50%] ml-5 md:ml-0">
           <div description
-            class="description load-hidden text-center text-lg font-['Portada'] text-slate-300 max-w-[200px]">سرور خوب
-            که دیگه تعریف نمیخواد جیگرت برم</div>
+            class="description load-hidden text-center text-xl lg:text-2xl font-['Portada'] text-slate-300 max-w-[200px]">سرور خوب که دیگه تعریف نمیخواد جیگرت برم</div>
 
-          <a onclick="window.scrollBy(0, window.innerHeight + 200)"
-            class="lesgo load-hidden cursor-pointer relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md w-full mx-auto">
-            <span
-              class="w-full h-full bg-gradient-to-br from-[#F9B37E] via-[#F67C66] to-[#DC5C44] group-hover:from-[#DC5C44] group-hover:via-[#F67C66] group-hover:to-[#F9B37E] absolute"></span>
-            <span
-              class="relative px-4 py-2 transition-all ease-out bg-[#1B1B1B] rounded-md group-hover:bg-opacity-0 duration-400 w-full text-center">
-              <span class="relative text-white font-['Portada'] text-sm mx-auto">بزن بریم</span>
-            </span>
-          </a>
+            
 
         </div>
       </div>
 
-      <div class="relative my-auto ">
+      <div class="relative my-auto carrot load-hidden hidden md:block">
+        <img class="absolute z-10 w-[72px] h-auto -right-7 -top-6 rotate-[75deg]" src="util/img/tape.png" />
         <img carrot
-          class="hidden carrot load-hidden shadow-[#111111] shadow-md md:block w-[350px] max-w-full h-auto rounded-md"
+          class="shadow-[#111111] shadow-md w-[350px] max-w-full h-auto rounded-md"
           src="util/img/carrot2.gif" />
       </div>
     </div>
@@ -149,19 +139,20 @@
           تیم ما، یک تیم نوپا و خلاق در زمینه گیمینگ است که در تلاش است تا مجموعه ای با کیفیت حداکثر را ممکن سازد. از
           علاقمندی های ما، اجرای پروژه های جدیدی است
           که در ایران تا به حال اجرا نشده اند
+          حدف اصلی ما رقابت سالم با دیگر سرور های موجود است
         </div>
         <img class="hidden md:block about-img load-hidden max-w-[14rem] w-full h-auto my-auto py-5"
           src="./util/img/mcmodel2.png" />
       </div>
     </div>
     <img
-      class="absolute -left-[15rem] -top-[7rem] hue-rotate-60 blur-sm w-full opacity-50 max-w-[100em] h-auto pointer-events-none z-10 mx-10"
+      class="absolute -left-[15rem] -top-[7rem] blur-sm w-full max-w-[100em] h-auto pointer-events-none z-10 mx-10"
       src="./util/img/orange.png" />
   </section>
 
-  <section gamemodes class="relative w-full bg-[#1B1B1B] py-16">
+  <section gamemodes class="relative w-full bg-[#1B1B1B] pt-16">
 
-    <div class="flex flex-col justify-around lg:flex-row">
+    <div class="flex flex-col justify-around lg:flex-row my-5">
 
       <div class="mode-card card1 load-hidden">
         <img class="mode-img" src="util/img/landscape1.jpg" />
@@ -295,11 +286,11 @@
     <div dlmc>
       <div class="flex flex-col gap-10 py-10 md:pt-10">
         <img
-          class="w-full shadow-[#111111] shadow-xl max-w-[350px] md:max-w-[400px] h-auto mx-auto bg-gradient-to-b from-[#15111E] to-[#18100F] rounded-full border-[1px] border-white mcmodel load-hidden"
+          class="w-full max-w-[350px] md:max-w-[400px] h-auto mx-auto bg-gradient-to-b from-[#000000] to-[#201b00] shadow-xl shadow-[#111111] rounded-full border-[1px] border-white px-10 pt-5 mcmodel load-hidden"
           src="util/img/mcmodel.png" />
         <div class="flex flex-col gap-5 mx-auto dlbutton load-hidden">
           <button
-            class="font-['Portada'] bg-gradient-to-bl from-[#F9B37E] via-[#F67C66] to-[#DC5C44] rounded-md p-2 w-fit mx-auto shadow-md hover:shadow-lg hover:shadow-[#6d2e21] shadow-[#6d2e21] transition-all flex flex-row gap-2"
+            class="font-['Portada'] bg-gradient-to-bl from-[#FBD413] to-[#F49C25] rounded-md p-2 w-fit mx-auto shadow-md hover:shadow-lg hover:shadow-[#da891f] shadow-[#da891f] transition-all flex flex-row gap-2"
             onclick="window.open('https://dl2.tlauncher.org/f.php?f=files%2FTLauncher-2.841-Installer-0.9.9.exe')">
             <div class="border-r-[1px] border-r-black pr-2">دانلود ماینکرفت</div>
             <img class="w-[24px] h-auto"
@@ -315,7 +306,7 @@
       <div class="relative flex flex-col justify-around gap-10 py-5 mx-auto md:gap-0 md:w-auto w-fit md:flex-row">
 
         <div class="flex flex-row gap-4 mx-auto md:mx-0">
-          <img class="h-[48px] md:h-[64px] w-auto my-auto opacity-90 invert" src="util/img/thundersolid.png" />
+          <img class="h-[48px] md:h-[56px] w-auto my-auto opacity-90 invert" src="util/img/thundersolid.png" />
           <div class="flex flex-col my-auto">
             <div class="font-mono text-lg text-white">Play.ThunderMc.IR</div>
             <div class="font-['YekanBakh'] text-gray-400 text-sm mx-auto">تجربه ماینکرفت پارسی</div>
@@ -351,7 +342,6 @@
     ScrollReveal({
       reset: true
     });
-
 
     ScrollReveal().reveal('.header', { origin: 'top', delay: 50, distance: '15px' });
     ScrollReveal().reveal('.description', { origin: 'top', delay: 50, distance: '20px' });

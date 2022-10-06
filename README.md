@@ -20,10 +20,10 @@ A live demo of the project is available [here](https://stiki.ir/projects/thunder
 
 ## Delivery Optimizations Methodology
 
-PNG Compression
-PNG to WEBP
-Inline Scripting
-Pause rendering before content load
+- PNG Compression
+- PNG to WEBP
+- Inline Scripting
+- Pause any renderings before content is loaded
 
 ## Authors
 

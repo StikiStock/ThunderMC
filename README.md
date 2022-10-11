@@ -1,9 +1,7 @@
 
-# ThunderMc.iR (Incomplete)
+# ThunderMc.iR
 
-*This repository is an ongoing project*
-
-The future template of ThunderMc.IR - I decided to make the source open to public for education purposes.
+The new template for ThunderMc.IR - I decided to make the source open to public for education purposes.
 Feel free to open a pull request for any reason
 
 ## Features
@@ -16,10 +14,17 @@ Feel free to open a pull request for any reason
 - According to global Standard UX
 - Made with love
 
-## Optimizations
+## Demo
 
-// There will be a long list of Used Optimization Methods in this section soon enough.
-I will implement the optimizations right after the website design is fully complete.
+A live demo of the project is available [here](https://stiki.ir/projects/thundermc).
+
+## Delivery Optimizations Methodology
+
+- PNG Compression
+- PNG to WEBP
+- Inline Scripting
+- Pause any renderings before content is loaded
+
 ## Authors
 
 - [@StikiStock](https://www.stiki.ir)

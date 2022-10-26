@@ -857,7 +857,7 @@ html.sr .load-hidden {
 
 .mask {
   background-color: #1b1b1b;
-  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.12'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .pointer-events-none {
@@ -1294,8 +1294,8 @@ html.sr .load-hidden {
   background-color: rgb(27 27 27 / var(--tw-bg-opacity));
 }
 
-.bg-\[rgba\(48\2c 48\2c 48\2c 0\.5\)\] {
-  background-color: rgba(48,48,48,0.5);
+.bg-\[rgba\(48\2c 48\2c 48\2c 0\.25\)\] {
+  background-color: rgba(48,48,48,0.25);
 }
 
 .bg-\[\#0e0e0e\] {
@@ -1511,18 +1511,6 @@ html.sr .load-hidden {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-\[3px_3px_6px_\#000000\2c _-3px_-3px_6px_\#2a2a2a85\] {
-  --tw-shadow: 3px 3px 6px #000000, -3px -3px 6px #2a2a2a85;
-  --tw-shadow-colored: 3px 3px 6px var(--tw-shadow-color), -3px -3px 6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-\[3px_3px_6px_\#0a0a0a\2c _-3px_-3px_6px_\#111111\] {
-  --tw-shadow: 3px 3px 6px #0a0a0a, -3px -3px 6px #111111;
-  --tw-shadow-colored: 3px 3px 6px var(--tw-shadow-color), -3px -3px 6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-\[\#111111\] {
   --tw-shadow-color: #111111;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1577,8 +1565,8 @@ html.sr .load-hidden {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.backdrop-blur-\[10px\] {
-  --tw-backdrop-blur: blur(10px);
+.backdrop-blur-\[12px\] {
+  --tw-backdrop-blur: blur(12px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -1587,10 +1575,6 @@ html.sr .load-hidden {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.duration-200 {
-  transition-duration: 200ms;
 }
 
 .ease-in-out {

@@ -2,7 +2,7 @@
 # ThunderMc.iR
 
 The new template for ThunderMc.IR - I decided to make the source open to public for education purposes.
-Feel free to open a pull request for any reason
+Feel free to open a pull request
 
 ## Features
 
@@ -10,9 +10,8 @@ Feel free to open a pull request for any reason
 - Written in Tailwind
 - Dark theme
 - Light Mode Toggle (Soon)
-- Scroll animations
-- According to global Standard UX
-- Made with love
+- Smooth Scroll Animations
+- Standard UX
 
 ## Demo
 
@@ -23,7 +22,7 @@ A live demo of the project is available [here](https://stiki.ir/projects/thunder
 - PNG Compression
 - PNG to WEBP
 - Inline Scripting
-- Pause any renderings before content is loaded
+- Pause pre-load rendering
 
 ## Authors
 
